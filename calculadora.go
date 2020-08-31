@@ -44,18 +44,18 @@ func parsear(entrada string) int {
 	return operador
 }
 
-func leerEntrada() string {
+func LeerEntrada() string {
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
 
 	return scanner.Text()
 }
 
-func main() {
-	entrada := leerEntrada()
-	operador := leerEntrada()
+// func main() {
+// 	entrada := leerEntrada()
+// 	operador := leerEntrada()
 
-	c := calc{}
-	fmt.Println(c.operate(entrada, operador))
+// 	c := calc{}
+// 	fmt.Println(c.operate(entrada, operador))
 
-}
+// }
